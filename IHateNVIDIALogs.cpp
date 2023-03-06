@@ -9,16 +9,20 @@
 using namespace std;
 namespace fs = std::filesystem;
 
+string folder = "C:\\ProgramData\\NVIDIA Corporation\\Drs";
 
 void menu()
 {
     system("cls");
-    std::cout << "I Hate NVIDIA Logs Menu\n";
-    std::cout << "==============================================\n";
-    std::cout << "1. Remove NVIDIA recently launched programs\n";
-    std::cout << "==============================================\n";
-    std::cout << "2. Exit\n";
-    std::cout << ">";
+    cout << "= I Hate NVIDIA Logs Menu\n";
+    cout << "= THIS SOFTWARE IS FREE, IF YOU PAID MONEY FOR IT, YOU HAVE BEEN SCAMMED!\n";
+    cout << "===============================================\n";
+    cout << "= 1. Remove NVIDIA recently launched programs =\n";
+    cout << "= 2. Open NVIDIA Logs folder                  =\n";
+    cout << "===============================================\n";
+    cout << "=\n";
+    cout << "= 3. Exit\n";
+    cout << "= > ";
 
 
 }
@@ -68,11 +72,14 @@ int main() {
         case 1:
             remove_logs();
             break;
+        case 2:
+            system("explorer C:\\ProgramData\\\NVIDIA Corporation\\Drs");
+            break;
         }
 
-        if (variant != 2)
+        if (variant != 3)
             system("pause");
-    } while (variant != 2);
+    } while (variant != 3);
 
     return 0;
 }
