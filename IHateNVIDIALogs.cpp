@@ -9,8 +9,6 @@
 using namespace std;
 namespace fs = std::filesystem;
 
-string folder = "C:\\ProgramData\\NVIDIA Corporation\\Drs";
-
 void menu()
 {
     system("cls");
